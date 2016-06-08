@@ -14,6 +14,12 @@
 		A4E556A21D07BBBA00AE477F /* GuidePage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A4E556A01D07BBBA00AE477F /* GuidePage.xcdatamodeld */; };
 		A4E556A41D07BBBA00AE477F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4E556A31D07BBBA00AE477F /* Assets.xcassets */; };
 		A4E556A71D07BBBA00AE477F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E556A51D07BBBA00AE477F /* LaunchScreen.storyboard */; };
+		A4E556B71D07BBD100AE477F /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4E556B01D07BBD100AE477F /* image1.jpg */; };
+		A4E556B81D07BBD100AE477F /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4E556B11D07BBD100AE477F /* image2.jpg */; };
+		A4E556B91D07BBD100AE477F /* image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4E556B21D07BBD100AE477F /* image3.jpg */; };
+		A4E556BA1D07BBD100AE477F /* image4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4E556B31D07BBD100AE477F /* image4.jpg */; };
+		A4E556BB1D07BBD100AE477F /* image5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4E556B41D07BBD100AE477F /* image5.jpg */; };
+		A4E556BC1D07BBD100AE477F /* ZLCGuidePageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E556B61D07BBD100AE477F /* ZLCGuidePageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +34,13 @@
 		A4E556A31D07BBBA00AE477F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4E556A61D07BBBA00AE477F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4E556A81D07BBBA00AE477F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4E556B01D07BBD100AE477F /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
+		A4E556B11D07BBD100AE477F /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image2.jpg; sourceTree = "<group>"; };
+		A4E556B21D07BBD100AE477F /* image3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image3.jpg; sourceTree = "<group>"; };
+		A4E556B31D07BBD100AE477F /* image4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image4.jpg; sourceTree = "<group>"; };
+		A4E556B41D07BBD100AE477F /* image5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image5.jpg; sourceTree = "<group>"; };
+		A4E556B51D07BBD100AE477F /* ZLCGuidePageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLCGuidePageView.h; sourceTree = "<group>"; };
+		A4E556B61D07BBD100AE477F /* ZLCGuidePageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLCGuidePageView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +73,7 @@
 		A4E556931D07BBBA00AE477F /* GuidePage */ = {
 			isa = PBXGroup;
 			children = (
+				A4E556AE1D07BBD100AE477F /* ZLCGuidePage */,
 				A4E556971D07BBBA00AE477F /* AppDelegate.h */,
 				A4E556981D07BBBA00AE477F /* AppDelegate.m */,
 				A4E5569A1D07BBBA00AE477F /* ViewController.h */,
@@ -80,6 +94,28 @@
 				A4E556951D07BBBA00AE477F /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A4E556AE1D07BBD100AE477F /* ZLCGuidePage */ = {
+			isa = PBXGroup;
+			children = (
+				A4E556AF1D07BBD100AE477F /* Resource */,
+				A4E556B51D07BBD100AE477F /* ZLCGuidePageView.h */,
+				A4E556B61D07BBD100AE477F /* ZLCGuidePageView.m */,
+			);
+			path = ZLCGuidePage;
+			sourceTree = "<group>";
+		};
+		A4E556AF1D07BBD100AE477F /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				A4E556B01D07BBD100AE477F /* image1.jpg */,
+				A4E556B11D07BBD100AE477F /* image2.jpg */,
+				A4E556B21D07BBD100AE477F /* image3.jpg */,
+				A4E556B31D07BBD100AE477F /* image4.jpg */,
+				A4E556B41D07BBD100AE477F /* image5.jpg */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +176,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4E556A71D07BBBA00AE477F /* LaunchScreen.storyboard in Resources */,
+				A4E556BB1D07BBD100AE477F /* image5.jpg in Resources */,
+				A4E556B81D07BBD100AE477F /* image2.jpg in Resources */,
+				A4E556B71D07BBD100AE477F /* image1.jpg in Resources */,
+				A4E556B91D07BBD100AE477F /* image3.jpg in Resources */,
+				A4E556BA1D07BBD100AE477F /* image4.jpg in Resources */,
 				A4E556A41D07BBBA00AE477F /* Assets.xcassets in Resources */,
 				A4E5569F1D07BBBA00AE477F /* Main.storyboard in Resources */,
 			);
@@ -155,6 +196,7 @@
 				A4E5569C1D07BBBA00AE477F /* ViewController.m in Sources */,
 				A4E556A21D07BBBA00AE477F /* GuidePage.xcdatamodeld in Sources */,
 				A4E556991D07BBBA00AE477F /* AppDelegate.m in Sources */,
+				A4E556BC1D07BBD100AE477F /* ZLCGuidePageView.m in Sources */,
 				A4E556961D07BBBA00AE477F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

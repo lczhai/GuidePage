@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ZLCGuidePageView.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    //引导页图片数组
+    NSArray *images =  @[[UIImage imageNamed:@"image1.jpg"],[UIImage imageNamed:@"image2.jpg"],[UIImage imageNamed:@"image3.jpg"],[UIImage imageNamed:@"image4.jpg"],[UIImage imageNamed:@"image5.jpg"]];
+    //创建引导页视图
+    ZLCGuidePageView *pageView = [[ZLCGuidePageView alloc]initWithFrame:self.view.frame WithImages:images];
+    [self.view addSubview:pageView];
+    
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
