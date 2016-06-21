@@ -23,3 +23,20 @@
  [self.view addSubview:pageView];
  </code>
  </p>
+
+
+
+
+###使用代码及场景
+######请将GuidePage添加到项目根视图上
+ <code>
+ //判断是否为第一次启动，若为第一次启动这执行引导页
+	if(![[NSUserDefaults standardUserDefaults] boolForKey:@"firstStart"]){
+ [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"firstStart"];
+ NSArray *arr =  @[[UIImage imageNamed:@"image1.jpg"],[UIImage imageNamed:@"image2.jpg"],[UIImage imageNamed:@"image3.jpg"],[UIImage imageNamed:@"image4.jpg"],[UIImage imageNamed:@"image5.jpg"]];
+ <code>
+ ZLCGuidePageView *pageView = [[ZLCGuidePageView alloc]initWithFrame:self.view.frame WithImages:arr];
+ //注意若项目是以navigationController为根视图，请讲guidepage添加在根视图view上
+ [self.navigationController.view addSubview:pageView];
+	}
+	<code/>
