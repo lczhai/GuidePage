@@ -17,13 +17,36 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    //引导页图片数组
-    NSArray *images =  @[[UIImage imageNamed:@"image1.jpg"],[UIImage imageNamed:@"image2.jpg"],[UIImage imageNamed:@"image3.jpg"],[UIImage imageNamed:@"image4.jpg"],[UIImage imageNamed:@"image5.jpg"]];
-    //创建引导页视图
-    ZLCGuidePageView *pageView = [[ZLCGuidePageView alloc]initWithFrame:self.view.frame WithImages:images];
-    [self.view addSubview:pageView];
-    
+	self.view.backgroundColor = [UIColor cyanColor];
+	self.title = @"home";
+	
+	
+	
+	//引导页图片数组
+	NSArray *images =  @[[UIImage imageNamed:@"image1.jpg"],[UIImage imageNamed:@"image2.jpg"],[UIImage imageNamed:@"image3.jpg"],[UIImage imageNamed:@"image4.jpg"],[UIImage imageNamed:@"image5.jpg"]];
+	//创建引导页视图
+	ZLCGuidePageView *pageView = [[ZLCGuidePageView alloc]initWithFrame:self.view.frame WithImages:images];
+	[self.navigationController.view addSubview:pageView];
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(0, self.view.frame.size.width-100, self.view.frame.size.width, 60)];
+	label.text = @"this is home page";
+	label.textColor = [UIColor blackColor];
+	label.font = [UIFont systemFontOfSize:44];
+	label.textAlignment = NSTextAlignmentCenter;
+	[self.view addSubview:label];
+	
+	
+	
+	
+	
     
     
     
