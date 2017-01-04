@@ -37,7 +37,7 @@
 	
 	
 	UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(0, self.view.frame.size.width-100, self.view.frame.size.width, 60)];
-	label.text = @"this is home page";
+	label.text = @"Home Page";
 	label.textColor = [UIColor blackColor];
 	label.font = [UIFont systemFontOfSize:44];
 	label.textAlignment = NSTextAlignmentCenter;
